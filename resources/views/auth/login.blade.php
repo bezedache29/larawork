@@ -7,7 +7,7 @@
     
     <div class="mb-4">
         <label for="email" class="block font-semibold text-gray-700 mb-2">Email</label>
-        <input id="email" type="email" name="email" class="shadow border rounded w-full p-2" value="{{ old('email') }}" autocomplete="email" placeholder="Votre email" autofocus>
+        <input id="email" type="email" name="email" class="shadow border rounded w-full p-2 outline-none" value="{{ old('email') }}" autocomplete="email" placeholder="Votre email" autofocus>
         @error('email')
             <span class="text-red-400 text-sm">
                 <span>{{ $message }}</span>
@@ -17,7 +17,7 @@
 
     <div class="mb-4">
         <label for="password" class="block font-semibold text-gray-700 mb-2">Mot de passe</label>
-        <input id="password" type="password" name="password" class="shadow border rounded w-full p-2" value="{{ old('password') }}" autocomplete="password" placeholder="Votre mot de passe" autofocus>
+        <input id="password" type="password" name="password" class="shadow border rounded w-full p-2 outline-none" value="{{ old('password') }}" autocomplete="password" placeholder="Votre mot de passe" autofocus>
        @error('password')
             <span class="text-red-400 text-sm">{{ $message }}</span>
         @enderror
