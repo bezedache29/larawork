@@ -13,4 +13,11 @@ class JobController extends Controller
         
         return view('jobs.index', compact('jobs'));
     }
+
+    public function show(Job $id)
+    {
+        return view('jobs.show', [
+            'job' => $id
+        ]);
+    }
 }

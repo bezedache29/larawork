@@ -7,6 +7,8 @@
         <link rel="stylesheet" href="{{ asset('css/app.css') }}">
 
         <title>Upwork</title>
+        @livewireStyles
+        <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.8.2/dist/alpine.min.js" defer></script>
     </head>
     <body>
         <div class="container mx-auto px-4">
@@ -16,5 +18,6 @@
             @yield('content')
 
         </div>
+        @livewireScripts
     </body>
 </html>
