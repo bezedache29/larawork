@@ -15,7 +15,8 @@ class Job extends Component
         if (Auth::check()) {
             Auth::user()->likes()->toggle($this->job->id);
         } else {
-            // flash message
+            $this->emit('message', 'Merci de vous connecter pour ajouter une mission à vos favoris', 'error');
+            // session()->flash('error', 'Merci de vous connecter pour ajouter une mission à vos favoris');
         }
     }
 
