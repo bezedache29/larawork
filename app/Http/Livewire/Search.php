@@ -10,7 +10,8 @@ class Search extends Component
 
     public $query;
 
-    public $jobs = [];
+    // Collection vide
+    public $jobs;
 
     public $selectedIndex = 0;
 
@@ -51,7 +52,8 @@ class Search extends Component
 
     public function showJob()
     {
-        if ($this->jobs) {
+        // Si la collection n'est pas vide
+        if ($this->jobs->isNotEmpty()) {
             return redirect()->route('jobs.show', [$this->jobs[$this->selectedIndex]['id']]);
         }
     }
