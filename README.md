@@ -4,9 +4,9 @@ Laravel / Livewire / Tailwindcss / AlpineJS
 ## Installations
 
 - [x] Laravel 8
-- [ ] Livewire
+- [x] Livewire
 - [x] Tailwindcss
-- [ ] AlpineJs
+- [x] AlpineJs
 
 ## Plugins
 
